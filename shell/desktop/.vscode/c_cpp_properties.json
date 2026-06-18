@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/gtk-4.0",
+                "/usr/include/glib-2.0",
+                "/usr/lib/aarch64-linux-gnu/glib-2.0/include",
+                "/usr/include/pango-1.0",
+                "/usr/include/harfbuzz",
+                "/usr/include/cairo",
+                "/usr/include/gdk-pixbuf-2.0",
+                "/usr/include/graphene-1.0",
+                "/usr/lib/aarch64-linux-gnu/graphene-1.0/include",
+                "/home/davidokocha/wlroots/include",
+                "/home/davidokocha/wlroots/build",
+                "/usr/include/pixman-1"
+            ],
+            "defines": [
+                "WLR_USE_UNSTABLE",
+                "_POSIX_C_SOURCE=200809L"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "linux-gcc-arm64"
+        }
+    ],
+    "version": 4
+}
