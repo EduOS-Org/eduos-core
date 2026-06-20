@@ -6,7 +6,7 @@ static void on_launcher_clicked(GtkWidget *widget, gpointer user_data) {
     g_print("Launcher button clicked\n");
     if (fork() == 0) {
         execl("/bin/sh", "/bin/sh", "-c",
-            "/home/davidokocha/eduos-core/shell/launcher/launcher",
+            "/opt/eduos/shell/launcher/launcher",
             (void *)NULL);
     }
 }
