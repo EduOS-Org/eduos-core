@@ -829,22 +829,22 @@ static void server_new_xdg_toplevel(struct wl_listener *listener, void *data) {
 	xdg_toplevel->base->data = toplevel->scene_tree;
 
 	/* EduOS window borders */
-	int bw = 2; /* border width in pixels */
-	float border_color[4] = {0.2f, 0.6f, 1.0f, 1.0f}; /* bright blue */
-	int w = 800, h = 600; /* initial size estimate */
+	// int bw = 2; /* border width in pixels */
+	// float border_color[4] = {0.2f, 0.6f, 1.0f, 1.0f}; /* bright blue */
+	// int w = 800, h = 600; /* initial size estimate */
 
 	/* top, bottom, left, right */
-	toplevel->borders[0] = wlr_scene_rect_create(toplevel->scene_tree, w, bw, border_color);
-	wlr_scene_node_set_position(&toplevel->borders[0]->node, 0, -bw);
+	// toplevel->borders[0] = wlr_scene_rect_create(toplevel->scene_tree, w, bw, border_color);
+	// wlr_scene_node_set_position(&toplevel->borders[0]->node, 0, -bw);
 
-	toplevel->borders[1] = wlr_scene_rect_create(toplevel->scene_tree, w, bw, border_color);
-	wlr_scene_node_set_position(&toplevel->borders[1]->node, 0, h);
+	// toplevel->borders[1] = wlr_scene_rect_create(toplevel->scene_tree, w, bw, border_color);
+	// wlr_scene_node_set_position(&toplevel->borders[1]->node, 0, h);
 
-	toplevel->borders[2] = wlr_scene_rect_create(toplevel->scene_tree, bw, h + bw * 2, border_color);
-	wlr_scene_node_set_position(&toplevel->borders[2]->node, -bw, -bw);
+	// toplevel->borders[2] = wlr_scene_rect_create(toplevel->scene_tree, bw, h + bw * 2, border_color);
+	// wlr_scene_node_set_position(&toplevel->borders[2]->node, -bw, -bw);
 
-	toplevel->borders[3] = wlr_scene_rect_create(toplevel->scene_tree, bw, h + bw * 2, border_color);
-	wlr_scene_node_set_position(&toplevel->borders[3]->node, w, -bw);
+	// toplevel->borders[3] = wlr_scene_rect_create(toplevel->scene_tree, bw, h + bw * 2, border_color);
+	// wlr_scene_node_set_position(&toplevel->borders[3]->node, w, -bw);
 
 	/* Listen to the various events it can emit */
 	toplevel->map.notify = xdg_toplevel_map;
